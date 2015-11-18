@@ -1,0 +1,15 @@
+Ze zdjecia trzeba usunac:
+warstwę skóry i tłuszczu
+echa
+cienie
+naczynia i inne drobne artefakty
+
+Pomysły:
+Cienie można usunąć na początek: thresholdem 0-1 lub 0-1-2.
+
+Warstwę można usunąć w 3 etapach: 
+1. threshold wyznaczający silne białe artefakty.
+2. ocena ich rozmiaru i położenia: duże wysoko to prawdopobobna linia tłuszczu. 
+3. wycięcie obszaru znajdującego się powyżej (kolumnami) wybranego artefaktu. Kolumny, które nie znalazły się w przekroju artefaktu przycięte zostaną wierszami zgodnie z położeniem lewej i prawej krawędzi artefaktu.
+
+Drobne artefakty można wyłapać odpowiednim thresholdem.   
